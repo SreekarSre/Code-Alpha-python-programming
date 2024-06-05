@@ -19,9 +19,9 @@ def hangman():
         if guessed_letter not in chosen_word:
             lives -=1
             if lives ==0:
-                game_oveer = True
+                game_over = True
                 print("YOU LOSE")
         if '_' not in display:
             game_over = True
             print("YOU WIN")
-    hangman()                            
+hangman()                 
